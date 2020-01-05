@@ -1,13 +1,3 @@
-/*
-*   Author: beshleyua
-*   Author URL: http://themeforest.net/user/beshleyua
-*/
-
-
-/*
-	Preloader
-*/
-
 $(window).on("load", function() {
 	var preload = $('.preloader');
 	var lines = $('.lines-grid');
@@ -374,20 +364,4 @@ function initMap() {
 		}
 	]
 
-	var mapOptions = {
-		zoom: 16,
-		center: myLatlng,
-		mapTypeControl: false,
-		disableDefaultUI: true,
-		zoomControl: true,
-		scrollwheel: false,
-		styles: styles
-	}
-	
-	var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-	var marker = new google.maps.Marker({
-		position: myLatlng,
-		map: map,
-		title: 'We are here!'
-	});
 }
